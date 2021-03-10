@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+:root {
+  --salmon: #f7786b;
+}
+
+.navbar {
+  font-family: 'Shippori Mincho B1', serif;
+  color: darkslategrey;
+  background: white;
+  border-top: solid var(--salmon) 5px;
+  margin-bottom: 2em;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 1rem;
+}
+.menu {
+  margin-left: auto;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  padding: 1rem;
+}
+.donate {
+  padding: 1rem;
+  background: var(--salmon);
+  color: white;
+}
+.quote {
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 36px;
+  color: darkslategrey;
+  background: white;
+  padding: 3rem;
+}
+.donatebutton h3 {
+  display: inline-block;
+  padding: 1rem;
+  background: var(--salmon);
+  color: white;
+}
+.picture {
+  width: 100%;
+  height: auto;
+}
+.splash {
+  max-height: 400px;
+}
+
+/*Responsive CSS*/
+@media (min-width: 768px){
+  .container {
+    width: 750;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px){
+  .container {
+    width: 970px;
+    margin: 0 auto;
+  }
+}
+/*Animation CSS*/
+.animation{
+  background: #f7786b;
+}
+.props{
+  text-align: center;
+}
+.door{
+  height: 400px;
+  width: 300px;
+}
+.woman{
+  height: 225px;
+  margin-bottom: 35px;
+}
+.window{
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  vertical-align: top;
+}
+.sick {
+  animation: sick 8s linear infinite;
+}
+@keyframes sick {
+  0% {
+    fill:#FEC377;
+  }
+  50% {
+    fill:#FEC377;
+  }
+  60% {
+    fill: yellowgreen;
+  }
+  100% {
+    fill: yellowgreen;
+  }
+}
+.fall {
+  animation: fall 8s cubic-bezier(0.73,-0.24, 0.71, 0.18) infinite;
+  transform-origin: 50% 90%;
+}
+@keyframes fall {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+.dooropen {
+  animation: dooropen 8s cubic-bezier(0.51, -0.01, 0.29, 1) infinite;
+  transform-origin: 10% 50%;
+}
+@keyframes dooropen {
+  0% {
+    transform: perspective(0px) translateZ(0px) translateX(0px) translateY(0px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-45deg);;
+  }
+  100% {
+    transform: perspective(200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-45deg);;
+  }
+}
+.windowclose {
+  animation: windowclose 8s cubic-bezier(0.51, -0.01, 0.29, 1) infinite;
+}
+@keyframes windowclose {
+  0% {
+    transform: translateY(16px);
+  }
+  35% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
