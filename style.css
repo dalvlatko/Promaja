@@ -78,8 +78,11 @@ body {
 /*Responsive CSS*/
 @media (min-width: 768px){
   .container {
-    width: 750;
+    width: 750px;
     margin: 0 auto;
+  }
+  .props {
+    width: 750px;
   }
 }
 @media (min-width: 1200px){
@@ -87,34 +90,28 @@ body {
     width: 1170px;
     margin: 0 auto;
   }
+  .props {
+    width: 1170px;
+  }
 }
 @media (min-width: 992px){
   .container {
     width: 970px;
     margin: 0 auto;
   }
+  .props {
+    width: 970px;
+  }
 }
 /*Animation CSS*/
 .animation{
   background: #f7786b;
+  padding-top: 2rem;
 }
 .props{
-  text-align: center;
+  margin: 0 auto;
 }
-.door{
-  height: 400px;
-  width: 300px;
-}
-.woman{
-  height: 225px;
-  margin-bottom: 35px;
-}
-.window{
-  height: 200px;
-  width: 200px;
-  margin-top: 50px;
-  vertical-align: top;
-}
+
 .sick {
   animation: sick 8s linear infinite;
 }
@@ -134,7 +131,7 @@ body {
 }
 .fall {
   animation: fall 8s cubic-bezier(0.73,-0.24, 0.71, 0.18) infinite;
-  transform-origin: 50% 90%;
+  transform-origin: 65px 76px;
 }
 @keyframes fall {
   0% {
@@ -151,8 +148,8 @@ body {
   }
 }
 .dooropen {
+  transform-origin: -37px 0px;
   animation: dooropen 8s cubic-bezier(0.51, -0.01, 0.29, 1) infinite;
-  transform-origin: 10% 50%;
 }
 @keyframes dooropen {
   0% {
@@ -170,12 +167,12 @@ body {
 }
 @keyframes windowclose {
   0% {
-    transform: translateY(16px);
+    transform: translateY(14px);
   }
   35% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
