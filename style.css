@@ -4,6 +4,11 @@
 }
 html {
   box-sizing: border-box;
+  font-family: 'Shippori Mincho B1', serif;
+  color: darkslategrey;
+}
+p {
+  font-size: 1rem;
 }
 body {
   background: var(--offwhite);
@@ -14,7 +19,6 @@ body {
   --black: #2E2E3A;
   --unblue: #C4D5E9;
 }
-
 .navbar {
   font-family: 'Shippori Mincho B1', serif;
   color: darkslategrey;
@@ -39,28 +43,31 @@ body {
   display: inline-block;
   padding: 1rem;
 }
+.menu-button {
+  display: none;
+  padding: 1rem;
+  background: var(--salmon);
+  color: white;
+}
 .donate {
   padding: 1rem;
   background: var(--salmon);
   color: white;
 }
+.bg-blue {
+  background: var(--unblue);
+}
+.bg-salmon {
+  background: var(--salmon);
+}
 .quote {
   font-family: 'Shippori Mincho B1', serif;
   font-size: 36px;
   color: var(--black);
-  background: var(--offwhite);
-  padding: 3rem;
-}
-.quoteblue {
-  font-family: 'Shippori Mincho B1', serif;
-  font-size: 36px;
-  color: var(--black);
-  background: var(--unblue);
   padding: 3rem;
 }
 .picture {
-  width: 100%;
-  height: auto;
+  width: 50%;
 }
 .splash {
   max-height: 400px;
@@ -76,6 +83,25 @@ body {
 }
 
 /*Responsive CSS*/
+@media (max-width: 767px){
+  .container {
+    width: auto;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .quote {
+    padding: 1rem;
+  }
+  .menu ul {
+    display: none;
+  }
+  .picture {
+    width: 100%;
+  }
+  .menu-button {
+    display: inline-block;
+  }
+}
 @media (min-width: 768px){
   .container {
     width: 750px;
