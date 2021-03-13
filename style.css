@@ -92,14 +92,21 @@ body {
   .quote {
     padding: 1rem;
   }
-  .menu ul {
+  .menu li {
     display: none;
   }
   .picture {
     width: 100%;
   }
   .menu-button {
+    margin-left: auto;
     display: inline-block;
+  }
+  .menu-open li{
+    display: block;
+  }
+  .menu {
+    margin-left: 0;
   }
 }
 @media (min-width: 768px){
