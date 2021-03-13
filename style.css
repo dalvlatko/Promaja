@@ -102,8 +102,22 @@ body {
     margin-left: auto;
     display: inline-block;
   }
+  .menu-button:hover {
+    background:#c56055;
+  }
   .menu-open li{
     display: block;
+  }
+  .menu-open li:hover{
+    background:#c56055;
+    color: white;
+  }
+  .menu-open ul{
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    border: solid var(--black);
+    background: white;
   }
   .menu {
     margin-left: 0;

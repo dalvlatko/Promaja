@@ -7,3 +7,7 @@ menu_button.addEventListener("click", e => {
   console.log(e);
   menu.classList.toggle("menu-open");
 });
+menu.addEventListener("click", e => {
+  console.log(e);
+  menu.classList.toggle("menu-open");
+});
