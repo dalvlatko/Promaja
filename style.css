@@ -202,11 +202,14 @@ body {
   0% {
     transform: perspective(0px) rotateY(0deg);
   }
-  50% {
-    transform: perspective(200px) rotateY(30deg);;
+  33% {
+    transform: perspective(200px) rotateY(-45deg);
+  }
+  66% {
+    transform: perspective(200px) rotateY(-35deg);
   }
   100% {
-    transform: perspective(200px) rotateY(30deg);;
+    transform: perspective(200px) rotateY(-40deg);;
   }
 }
 .windowclose {
