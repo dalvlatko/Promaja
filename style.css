@@ -69,8 +69,20 @@ body {
 .picture {
   width: 50%;
 }
-.splash {
-  max-height: 400px;
+h1.splash {
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  font-size: 4em;
+  text-shadow: 1px 1px black;
+  padding-bottom: 1em;
+}
+.bg-splash {
+  width: 100%;
+  height: auto;
+  background-image: url(./images/window.jpg);
 }
 .button {
   padding: 3rem;
