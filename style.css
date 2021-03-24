@@ -87,7 +87,6 @@ h1.splash {
   background-image: url(./images/windowopen.jpg);
   background-position: bottom;
   background-size: cover;
-  max-height:
 }
 .bg-splash2 {
   width: 100%;
@@ -95,7 +94,6 @@ h1.splash {
   background-image: url(./images/turbines.jpeg);
   background-position: bottom;
   background-size: cover;
-  max-height:
 }
 .button {
   padding: 3rem;
