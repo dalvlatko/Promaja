@@ -41,16 +41,18 @@ body {
 }
 .menu li {
   display: inline-block;
-  padding: 1rem;
 }
 .menu-button {
   display: none;
   padding: 1rem;
   background: var(--salmon);
   color: white;
+  cursor: pointer;
+}
+.menu-item {
+  padding: 1rem;
 }
 .donate {
-  padding: 1rem;
   background: var(--salmon);
   color: white;
 }
@@ -70,19 +72,30 @@ body {
   width: 50%;
 }
 h1.splash {
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   color: white;
+  margin-bottom: 100px;
   font-size: 4em;
-  text-shadow: 1px 1px black;
-  padding-bottom: 1em;
+  text-shadow: 2px 2px black;
 }
 .bg-splash {
   width: 100%;
   height: auto;
-  background-image: url(./images/window.jpg);
+  background-image: url(./images/windowopen.jpg);
+  background-position: bottom;
+  background-size: cover;
+  max-height:
+}
+.bg-splash2 {
+  width: 100%;
+  height: auto;
+  background-image: url(./images/turbines.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  max-height:
 }
 .button {
   padding: 3rem;
