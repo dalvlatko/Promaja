@@ -143,6 +143,11 @@ footer h1 {
 .about a {
   padding: 1rem 0;
 }
+.social img{
+  width: 3rem;
+  padding: 1rem 0;
+  margin-right: 2rem;
+}
 /*Responsive CSS*/
 @media (max-width: 767px){
   .container {
