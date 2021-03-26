@@ -69,8 +69,6 @@ body {
 }
 .donate {
   background: var(--salmon);
-}
-.donate a {
   color: var(--offwhite) !important;
 }
 .bg-blue {
@@ -118,9 +116,6 @@ a:link, a:visited, a, a:visited {
   color: var(--black);
 }
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 300px;
   background: var(--black);
   background-color: var(--unblue);
@@ -152,7 +147,7 @@ footer h1 {
 @media (max-width: 767px){
   .container {
     width: auto;
-    margin: 0;
+    margin: 1rem;
     flex-wrap: wrap;
   }
   h1.splash {
