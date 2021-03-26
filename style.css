@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --salmon: #f7786b;
+  --offwhite: #F7F6F3;
+  --black: #2E2E3A;
+  --unblue: #E1EAF4;
+}
 html {
   box-sizing: border-box;
   font-family: 'Shippori Mincho B1', serif;
-  color: darkslategrey;
+  color: var(--black);
 }
 p {
   font-size: 1rem;
@@ -13,12 +19,7 @@ p {
 body {
   background: var(--offwhite);
 }
-:root {
-  --salmon: #f7786b;
-  --offwhite: #F7F6F3;
-  --black: #2E2E3A;
-  --unblue: #C4D5E9;
-}
+
 .navbar {
   color: darkslategrey;
   border-top: solid var(--salmon) 5px;
@@ -57,6 +58,9 @@ body {
 }
 .donate {
   background: var(--salmon);
+}
+.donate a {
+  color: var(--offwhite) !important;
 }
 .bg-blue {
   background: var(--unblue);
@@ -102,11 +106,37 @@ h1.splash {
   background: var(--offwhite);
   display: inline-block;
 }
-.button a:link, .button a:visited, .menu a, .menu a:visited {
+a:link, a:visited, a, a:visited {
   text-decoration: none;
   color: var(--black);
 }
-
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background: var(--black);
+  background-color: var(--unblue);
+  font-size: 1rem;
+}
+.footnav {
+  display: flex;
+  flex-direction: column;
+}
+.footnav a{
+  padding: 1rem 0;
+}
+.footlogo {
+  display: flex;
+  align-items: center;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about a {
+  padding: 1rem 0;
+}
 /*Responsive CSS*/
 @media (max-width: 767px){
   .container {
@@ -139,7 +169,7 @@ h1.splash {
   }
   ul.menu-open {
     position: absolute;
-    top: 60px;
+    top: 85px;
     right: 0px;
     width: 200px;
     box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.4);
@@ -147,6 +177,12 @@ h1.splash {
   }
   .menu {
     margin-left: 0;
+  }
+  .footlogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
   }
 }
 @media (min-width: 768px){
