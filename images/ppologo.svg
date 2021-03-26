@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1186" height="621" viewBox="0 0 1186 621">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7786b;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 190px;
+      }
+
+      .cls-3 {
+        fill: #2e2e3a;
+        font-family: "Caladea-Bold";
+        font-weight: bold;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 200px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        font-family: "Lobster";
+      }
+    </style>
+  </defs>
+  <rect x="-22" y="391" width="1249" height="240" class="cls-1"/>
+  <text x="100" y="158" class="cls-2"><tspan class="cls-3">promaja</tspan><tspan dy="0.921em" x="100" class="cls-3">prevention</tspan></text>
+  <text x="95" y="552" class="cls-4"><tspan class="cls-5">organization</tspan></text>
+</svg>
