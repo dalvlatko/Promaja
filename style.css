@@ -76,9 +76,6 @@ body {
 .bg-salmon {
   background: var(--salmon);
 }
-.picture {
-  width: 50%;
-}
 h1.splash {
   font-family: 'Montserrat', sans-serif;
   height: 300px;
@@ -91,6 +88,30 @@ h1.splash {
   margin-left: 200px;
   font-size: 4em;
 }
+.child {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-image: url(./images/child.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h1.quote {
+  max-width: 600px;
+  font-size: 2em;
+  color: var(--offwhite);
+  text-shadow: 1px 1px var(--black);
+  padding: 1rem;
+}
+h2.attr {
+  max-width: 400px;
+  font-size: 1em;
+  color: var(--offwhite);
+}
 .bg-splash {
   width: 100%;
   height: auto;
@@ -98,12 +119,26 @@ h1.splash {
   background-position: bottom;
   background-size: cover;
 }
-.bg-splash2 {
+.turbine {
   width: 100%;
   height: auto;
   background-image: url(./images/turbines.jpeg);
   background-position: bottom;
   background-size: cover;
+}
+h1.slogan {
+  font-family: 'Montserrat', sans-serif;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--offwhite);
+  text-shadow: 2px 2px var(--black);
+  font-size: 3em;
+}
+h2.byline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }
 .button {
   padding: 3rem;
