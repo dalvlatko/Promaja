@@ -99,6 +99,8 @@ h1.splash {
   background-image: url(./images/child.jpg);
   background-position: center;
   background-size: cover;
+  border-top: solid var(--salmon) 5px;
+  border-bottom: solid var(--salmon) 5px;
 }
 h1.quote {
   max-width: 600px;
@@ -125,6 +127,8 @@ h2.attr {
   background-image: url(./images/turbines.jpeg);
   background-position: bottom;
   background-size: cover;
+  border-top: solid var(--salmon) 5px;
+  border-bottom: solid var(--salmon) 5px;
 }
 h1.slogan {
   font-family: 'Montserrat', sans-serif;
