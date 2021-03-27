@@ -116,26 +116,31 @@ a:link, a:visited, a, a:visited {
 }
 footer {
   min-height: 300px;
-  background: var(--black);
   background-color: var(--unblue);
-  font-size: 1rem;
+  border-bottom: solid var(--salmon) 5px;
 }
 footer h1 {
   font-size: 2rem;
   padding: 0;
 }
+.footlogo {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
 .footnav {
+  width: 200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 .footnav a{
   padding: 1rem 0;
 }
-.footlogo {
-  display: flex;
-  align-items: center;
-}
 .about {
+  width: 200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
