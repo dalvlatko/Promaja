@@ -76,6 +76,9 @@ body {
   background: var(--salmon);
   color: var(--offwhite) !important;
 }
+.donatefoot {
+  display: inline-block;
+}
 .bg-blue {
   background: var(--unblue);
 }
