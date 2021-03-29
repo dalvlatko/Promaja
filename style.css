@@ -159,6 +159,9 @@ a:link, a:visited, a, a:visited {
   text-decoration: none;
   color: var(--black);
 }
+a.link {
+  font-weight: bold;
+}
 footer {
   min-height: 300px;
   background-color: var(--unblue);
