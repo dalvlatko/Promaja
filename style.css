@@ -214,6 +214,11 @@ footer h1 {
   margin-right: 2rem;
 }
 /*Responsive CSS*/
+@media (max-width: 500px){
+  .footlogo, .footnav, .about {
+    width: 200px;
+  }
+}
 @media (max-width: 767px){
   .container {
     width: auto;
