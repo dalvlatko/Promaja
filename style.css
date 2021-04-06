@@ -13,6 +13,12 @@ html {
   font-family: 'Shippori Mincho B1', serif;
   color: var(--black);
 }
+#news, #cause, #prevent, #donate {
+  padding: 1rem 0;
+}
+#news, #prevent {
+  background: var(--unblue);
+}
 h1 {
   font-size: 4rem;
   padding: 1rem 0;
