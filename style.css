@@ -4,19 +4,23 @@
 }
 :root {
   --salmon: #f7786b;
-  --offwhite: #F7F6F3;
-  --black: #2E2E3A;
-  --unblue: #E1EAF4;
+  --offwhite: #f7f6f3;
+  --black: #2e2e3a;
+  --unblue: #e1eaf4;
 }
 html {
   box-sizing: border-box;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: "Shippori Mincho B1", serif;
   color: var(--black);
 }
-#news, #cause, #prevent, #donate {
+#news,
+#cause,
+#prevent,
+#donate {
   padding: 1rem 0;
 }
-#news, #prevent {
+#news,
+#prevent {
   background: var(--unblue);
 }
 h1 {
@@ -32,7 +36,6 @@ h2.title {
   font-size: 1.5rem;
   border-top: solid var(--salmon) 1px;
   border-bottom: solid var(--salmon) 1px;
-
 }
 p {
   font-size: 1rem;
@@ -92,7 +95,7 @@ body {
   background: var(--salmon);
 }
 h1.splash {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 400px;
   display: flex;
   justify-content: flex-end;
@@ -129,7 +132,7 @@ h1.quote {
   padding: 0 2rem;
   padding-top: 0;
 }
-.quote2 h2{
+.quote2 h2 {
   padding-top: 0;
   font-size: 1.5rem;
 }
@@ -164,7 +167,7 @@ h2.attr {
   border-bottom: solid var(--salmon) 5px;
 }
 h1.slogan {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 2rem;
   height: 300px;
   display: flex;
@@ -180,9 +183,12 @@ h1.slogan {
   background: var(--salmon);
 }
 .button:hover {
-  background:#c56055;
+  background: #c56055;
 }
-a:link, a:visited, a, a:visited {
+a:link,
+a:visited,
+a,
+a:visited {
   text-decoration: none;
   color: var(--black);
 }
@@ -215,7 +221,7 @@ footer h1 {
   display: flex;
   flex-direction: column;
 }
-.footnav a{
+.footnav a {
   padding: 1rem 0;
 }
 .about {
@@ -227,18 +233,20 @@ footer h1 {
 .about a {
   padding: 1rem 0;
 }
-.social img{
+.social img {
   width: 3rem;
   padding: 1rem 0;
   margin-right: 2rem;
 }
 /*Responsive CSS*/
-@media (max-width: 500px){
-  .footlogo, .footnav, .about {
+@media (max-width: 500px) {
+  .footlogo,
+  .footnav,
+  .about {
     width: 200px;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .container {
     width: auto;
     margin: 0 1rem;
@@ -255,13 +263,13 @@ footer h1 {
     display: inline-block;
   }
   .menu-button:hover {
-    background:#c56055;
+    background: #c56055;
   }
-  .menu-open li{
+  .menu-open li {
     display: block;
   }
   .menu-item:hover {
-    background:#c56055;
+    background: #c56055;
     color: white;
   }
   ul.menu-open {
@@ -303,11 +311,11 @@ footer h1 {
     border-bottom: solid var(--salmon) 1px;
   }
   h2.attr {
-    font-size: .75rem;
+    font-size: 0.75rem;
     padding: 0 1rem;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .container {
     width: 700px;
     margin: 0 auto;
@@ -321,7 +329,7 @@ footer h1 {
     width: 700px;
   }
 }
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .container {
     width: 800px;
     margin: 0 auto;
@@ -333,7 +341,7 @@ footer h1 {
     height: 400px;
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .container {
     width: 900px;
     margin: 0 auto;
@@ -343,11 +351,11 @@ footer h1 {
   }
 }
 /*Animation CSS*/
-.animation{
+.animation {
   background: #f7786b;
   padding-top: 2rem;
 }
-.props{
+.props {
   margin: 0 auto;
 }
 
@@ -356,10 +364,10 @@ footer h1 {
 }
 @keyframes sick {
   0% {
-    fill:#FEC377;
+    fill: #fec377;
   }
   50% {
-    fill:#FEC377;
+    fill: #fec377;
   }
   60% {
     fill: yellowgreen;
@@ -369,7 +377,7 @@ footer h1 {
   }
 }
 .fall {
-  animation: fall 8s cubic-bezier(0.73,-0.24, 0.71, 0.18) infinite;
+  animation: fall 8s cubic-bezier(0.73, -0.24, 0.71, 0.18) infinite;
   transform-origin: 65px 76px;
 }
 @keyframes fall {
@@ -394,14 +402,8 @@ footer h1 {
   0% {
     transform: perspective(0px) rotateY(0deg);
   }
-  33% {
-    transform: perspective(200px) rotateY(-45deg);
-  }
-  66% {
-    transform: perspective(200px) rotateY(-35deg);
-  }
   100% {
-    transform: perspective(200px) rotateY(-40deg);;
+    transform: perspective(2000px) rotateY(2deg);
   }
 }
 .windowclose {
